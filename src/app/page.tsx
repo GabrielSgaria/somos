@@ -1,8 +1,14 @@
+import { Hero } from "./components/hero";
+import { SectionUniqueExperiences } from "./components/section-unique-experiences";
+import { SectionWhoWeAre } from "./components/section-who-we-are";
+
 
 export default function Home() {
   return (
-    <div className="flex">
-      <h1 className="">Hello SOMOS</h1>
-    </div>
+    <main>
+      <Hero/>
+      <SectionWhoWeAre />
+      <SectionUniqueExperiences/>
+    </main>
   );
 }
