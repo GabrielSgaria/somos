@@ -17,7 +17,7 @@ export function SectionWhoWeAre() {
                     whileInView={{ opacity: 1, x: 0, scale: 1 }}
                     exit={{ opacity: 0, x: -200, scale: 0.7 }}
                     transition={{ duration: 0.5 }}
-                    className="w-full h-[300px] md:w-[660px] md:h-[530px] relative rounded-xl shadow-md overflow-hidden">
+                    className="w-full h-[300px] md:w-[660px] md:h-[530px] relative rounded-xl shadow-md ">
                     <Image
                         alt=""
                         src="/image/propertys/3.jpg"
@@ -25,8 +25,10 @@ export function SectionWhoWeAre() {
                         quality={100}
                         priority
                         sizes="(min-width: 808px) 50vw, 100vw"
-                        className="object-cover "
+                        className="object-cover z-20 rounded-xl"
                     />
+                    <div className="w-[300px] h-[350px] bg-gray-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl"/>
+                    <div className="w-[450px] h-[350px] bg-gray-300/10 backdrop-blur-lg hidden md:absolute z-10 right-24 -bottom-8 rounded-xl shadow-sm"/>
                 </motion.div>
 
                 <motion.div

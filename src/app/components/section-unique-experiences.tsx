@@ -1,10 +1,9 @@
 'use client'
-
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import { Beer, Map } from "lucide-react";
-// import { motion } from "framer-motion"
+import { ArrowRight, Beer, Map } from "lucide-react";
+import { motion } from "framer-motion"
 import Image from "next/image";
-// import Link from "next/link"
+
 
 const Skeleton1 = () => (
     <div className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100 relative overflow-hidden">
@@ -76,7 +75,7 @@ export function SectionUniqueExperiences() {
                     <h1 className="text-center font-bold text-5xl">Vivencie o Melhor de Curitiba</h1>
                     <span className="text-center font-semibold text-xl text-gray-500 max-w-[750px]">Descubra a cidade com tours exclusivos, curadoria de cervejas e eventos locais.</span>
                 </div>
-                <div className="h-screen w-full py-10 ">
+                <div className="h-full w-full py-10 ">
                     <BentoGrid className="max-w-9xl mx-auto ">
                         {items.map((item, i) => (
                             <BentoGridItem
@@ -89,6 +88,49 @@ export function SectionUniqueExperiences() {
                             />
                         ))}
                     </BentoGrid>
+                </div>
+                <div className="flex flex-col gap-20 justify-around mt-10 items-center md:flex-row">
+                    <motion.div
+                        initial={{ opacity: 0, x: 200, scale: 0.7 }}
+                        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                        exit={{ opacity: 0, x: -200, scale: 0.7 }}
+                        transition={{ duration: 0.5 }}
+                        className="flex flex-col gap-10 justify-center items-center md:max-w-[50%] ">
+                        <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
+                           <h1 className="mb-2 text-blue-600 font-bold tracking-wider text-base flex gap-2 justify-center items-center">Design Icônico e Inspirador <ArrowRight size={20} className="hidden md:flex"/></h1>
+                            <h2 className="text-3xl font-bold text-center md:text-start">Cada apartamento é decorado com itens que traduzem nosso conceito de lifestyle.</h2>
+
+                            <p className="text-center text-xl max-w-[600px] md:text-start my-2">
+                                Ítens icônicos que traduzem o conceito e o
+                                estilo de vida que nossos hóspedes se sentem pertencentes, reforçando ainda mais esse vínculo
+                            </p>
+
+                            <button className="w-52 font-bold px-8 py-2 mt-10 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                                Saiba Mais
+                            </button>
+                        </div>
+
+
+                    </motion.div>
+                    {/* IMAGE */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -200, scale: 0.7 }}
+                        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                        exit={{ opacity: 0, x: -200, scale: 0.7 }}
+                        transition={{ duration: 0.5 }}
+                        className="w-full h-[300px] md:w-[660px] md:h-[530px] relative rounded-xl shadow-md">
+                        <Image
+                            alt=""
+                            src="/image/grade.png"
+                            fill
+                            quality={100}
+                            priority
+                            sizes="(min-width: 808px) 50vw, 100vw"
+                            className="object-cover rounded-xl z-20"
+                        />
+                        <div className="w-[300px] h-[350px] bg-gray-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl" />
+                        <div className="w-[450px] h-[350px] bg-gray-300/10 backdrop-blur-lg hidden md:absolute z-10 left-24 -bottom-8 rounded-xl shadow-xl" />
+                    </motion.div>
                 </div>
             </div>
         </section>
