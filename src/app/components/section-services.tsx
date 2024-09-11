@@ -2,6 +2,7 @@
 
 import { CardServices } from "./card-services";
 import Image from "next/image";
+import {motion} from "framer-motion"
 
 const servicesCard = [
     {
@@ -71,7 +72,11 @@ export function SectionServices() {
         <section className="py-10">
             <div className="mx-auto container flex flex-col gap-10 px-3 md:px-0 ">
 
-                <div className="hidden md:flex mb-20 md:mt-32 w-full max-w-[1200px] h-[300px] md:h-[508px] relative mx-auto rounded-xl shadow-xl overflow-hidden">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.7 }}
+                    whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }} className="hidden md:flex mb-20 md:mt-32 w-full max-w-[1200px] h-[300px] md:h-[508px] relative mx-auto rounded-xl shadow-xl overflow-hidden">
                     <Image
                         alt="Image Somos"
                         src="/image/somos-banner.png"
@@ -81,7 +86,7 @@ export function SectionServices() {
                         sizes="(min-width: 1200px) 50vw, 100vw"
                         className="object-right md:object-center object-cover"
                     />
-                </div>
+                </motion.div>
                 <div className="flex flex-col gap-3 items-center w-full justify-center">
                     <h1 className="text-center font-bold text-4xl md:text-5xl">Conheça nossos serviços</h1>
                     <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[700px]">Oferecemos um serviço completo de hospedagem, do check-in ao atendimento personalizado.</span>
@@ -101,6 +106,6 @@ export function SectionServices() {
 
             </div>
 
-        </section>
+        </section >
     )
 }

@@ -4,6 +4,7 @@ import { Hero } from "./components/hero";
 import { SectionServices } from "./components/section-services";
 import { SectionUniqueExperiences } from "./components/section-unique-experiences";
 import { SectionWhoWeAre } from "./components/section-who-we-are";
+import {motion} from "framer-motion"
 
 
 export default function Home() {
@@ -13,7 +14,12 @@ export default function Home() {
       <SectionWhoWeAre />
       <SectionUniqueExperiences />
       <SectionServices />
-      <section className="py-10 container mx-auto px-3 md:px-20 flex justify-center">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="py-10 container mx-auto px-3 md:px-20 flex justify-center">
         <div className="bg-bottom bg-cover md:bg-top bg-no-repeat max-w-[1120px] w-full h-[700px] bg-[url('../../public/image/banner-wpp-mobile.png')] md:bg-[url('../../public/image/banner-wpp.png')] rounded-3xl flex md:h-[500px] items-start justify-center md:items-center md:justify-end shadow-lg">
           <div className="md:w-1/2 h-1/2 w-full md:h-full flex flex-col gap-10 items-start justify-center px-10 pt-10 md:pt-0">
             <p className="text-zinc-50 font-bold text-4xl md:text-5xl">PRONTO PARA UMA<span className="text-blue-500"> EXPERIÊNCIA ÚNICA?</span></p>
@@ -29,7 +35,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </motion.div>
     </main>
   );
 }
