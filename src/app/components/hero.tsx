@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
     return (
-        <section className="w-full min-h-[890px] md:max-h-[1080px] xl:max-h-[780px] 2xl:min-h-[918px] bg-no-repeat bg-cover bg-top bg-mobile md:bg-desktop flex justify-center items-center xl:justify-start xl:pl-48 mb-20 relative ">
+        <section className="w-full min-h-[750px] md:max-h-[1080px] xl:max-h-[780px] 2xl:min-h-[918px] bg-no-repeat bg-cover bg-right-top md:bg-top bg-mobile md:bg-desktop flex justify-center items-center xl:justify-start xl:pl-48 mb-20 relative ">
 
             <motion.div
                 initial={{ opacity: 0, x: -200, scale: 0.7 }}
