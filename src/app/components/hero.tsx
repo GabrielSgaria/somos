@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
     return (
-        <section className="w-full min-h-[750px] md:max-h-[1080px] xl:max-h-[780px] 2xl:min-h-[918px] bg-no-repeat bg-cover bg-right-top md:bg-top bg-mobile md:bg-desktop flex justify-center items-center xl:justify-start xl:pl-48 mb-20 relative ">
+        <section className="w-full min-h-[750px] md:max-h-[1080px] xl:max-h-[780px] 2xl:min-h-[918px] bg-no-repeat bg-cover bg-right-top md:bg-top bg-mobile md:bg-desktop flex justify-center items-center xl:justify-start xl:pl-48 mb-20 relative">
 
             <motion.div
                 initial={{ opacity: 0, x: -200, scale: 0.7 }}
@@ -13,7 +13,7 @@ export function Hero() {
                 exit={{ opacity: 0, x: -200, scale: 0.7 }}
                 transition={{ duration: 0.5 }}
                 className="flex flex-col gap-2 relative h-full px-3 md:px-0">
-                <h1 className="cormorant text-9xl md:text-[228px] font-normal text-gray-50 text-center">
+                <h1 className="cormorant text-[110px] md:text-[228px] font-normal text-gray-50 text-center">
                     SOMOS
                 </h1>
                 <span className="font-light text-xl -mt-5 md:-mt-10 text-gray-50 text-center"> SOMOS UM ESTILO DE HOSPEDAGEM FOCADO EM DESIGN, SERVIÇO E EXPERIÊNCIA</span>
