@@ -12,7 +12,7 @@ export function sendMensage() {
       "https://wa.me/" +
       5504188078097 +
       "?text=" +
-      encodeURIComponent("Olá, vim através do site da somos!");
+      encodeURIComponent("Olá, vim através do site da SOMOS!");
 
     window.open(linkWhatsApp, "_blank");
   }

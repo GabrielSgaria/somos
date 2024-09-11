@@ -1,5 +1,6 @@
 'use client'
 
+import { sendMensage } from "@/lib/utils"
 import { motion } from "framer-motion"
 
 
@@ -17,7 +18,7 @@ export function Hero() {
                     SOMOS
                 </h1>
                 <span className="font-light text-xl -mt-5 md:-mt-10 text-gray-50 text-center"> SOMOS UM ESTILO DE HOSPEDAGEM FOCADO EM DESIGN, SERVIÇO E EXPERIÊNCIA</span>
-                <button className="font-bold px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                <button onClick={() => sendMensage()} className="font-bold px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
                     Saiba Mais
                 </button>
 

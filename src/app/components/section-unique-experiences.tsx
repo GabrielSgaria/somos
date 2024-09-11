@@ -3,6 +3,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { ArrowRight, Beer, Map } from "lucide-react";
 import { motion } from "framer-motion"
 import Image from "next/image";
+import { sendMensage } from "@/lib/utils";
 
 
 const Skeleton1 = () => (
@@ -105,7 +106,7 @@ export function SectionUniqueExperiences() {
                                 estilo de vida que nossos hóspedes se sentem pertencentes, reforçando ainda mais esse vínculo
                             </p>
 
-                            <button className="w-52 font-bold px-8 py-2 mt-10 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                            <button onClick={() => sendMensage()} className="w-52 font-bold px-8 py-2 mt-10 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
                                 Saiba Mais
                             </button>
                         </div>
