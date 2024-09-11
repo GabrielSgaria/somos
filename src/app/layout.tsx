@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.variable} bg-gray-50 text-gray-950 antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.variable} bg-gray-50 text-gray-950 antialiased`}
       >
         {children}
       </body>

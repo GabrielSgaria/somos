@@ -6,7 +6,7 @@ import { SectionWhoWeAre } from "./components/section-who-we-are";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero/>
       <SectionWhoWeAre />
       <SectionUniqueExperiences/>
