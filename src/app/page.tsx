@@ -1,3 +1,5 @@
+'use client'
+import { sendMensage } from "@/lib/utils";
 import { Hero } from "./components/hero";
 import { SectionServices } from "./components/section-services";
 import { SectionUniqueExperiences } from "./components/section-unique-experiences";
@@ -17,12 +19,7 @@ export default function Home() {
             <p className="text-zinc-50 font-bold text-4xl md:text-5xl">PRONTO PARA UMA<span className="text-blue-500"> EXPERIÊNCIA ÚNICA?</span></p>
             <span className="text-zinc-300 text-lg md:text-xl">Tudo para gerar uma vivência excepcional para nossos hóspedes e resultados relevantes para nossos investidores.</span>
             <a
-              // onClick={() =>
-              //   sendMensage(
-              //     5541992652259,
-              //     "Olá! Vim através do site Sgaria Tech, Preciso de um Sistiema Web sob medida."
-              //   )
-              // }
+              onClick={() => sendMensage()}
               className=" w-full cursor-pointer shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-blue-600 hover:bg-blue-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
             >
               <p className="font-bold">

@@ -72,8 +72,8 @@ export function SectionUniqueExperiences() {
             <div className="mx-auto container flex flex-col gap-10 px-3 md:px-0">
 
                 <div className="flex flex-col gap-3 items-center w-full justify-center">
-                    <h1 className="text-center font-bold text-5xl">Vivencie o Melhor de Curitiba</h1>
-                    <span className="text-center font-semibold text-xl text-gray-500 max-w-[750px]">Descubra a cidade com tours exclusivos, curadoria de cervejas e eventos locais.</span>
+                    <h1 className="text-center font-bold text-4xl md:text-5xl">Vivencie o Melhor de Curitiba</h1>
+                    <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[750px]">Descubra a cidade com tours exclusivos, curadoria de cervejas e eventos locais.</span>
                 </div>
                 <div className="h-full w-full py-10 ">
                     <BentoGrid className="max-w-9xl mx-auto ">
@@ -98,9 +98,9 @@ export function SectionUniqueExperiences() {
                         className="flex flex-col gap-10 justify-center items-center md:max-w-[50%] ">
                         <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
                            <h1 className="mb-2 text-blue-600 font-bold tracking-wider text-base flex gap-2 justify-center items-center">Design Icônico e Inspirador <ArrowRight size={20} className="hidden md:flex"/></h1>
-                            <h2 className="text-3xl font-bold text-center md:text-start">Cada apartamento é decorado com itens que traduzem nosso conceito de lifestyle.</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold text-center md:text-start">Cada apartamento é decorado com itens que traduzem nosso conceito de lifestyle.</h2>
 
-                            <p className="text-center text-xl max-w-[600px] md:text-start my-2">
+                            <p className="text-center text-lg md:text-xl max-w-[600px] md:text-start my-2">
                                 Ítens icônicos que traduzem o conceito e o
                                 estilo de vida que nossos hóspedes se sentem pertencentes, reforçando ainda mais esse vínculo
                             </p>

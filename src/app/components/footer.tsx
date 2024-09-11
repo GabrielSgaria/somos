@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="bg-gray-50 text-gray-950 py-8 my-20">
             <div className="border-zinc-300/90 border-t-[1px] w-[50%] mx-auto pb-20" />
             <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-start">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div className="mb-4 md:mb-0 text-center flex flex-col gap-2">
                         <h3 className="text-3xl font-semibold mb-8 text-center">Entre em contato</h3>
                         <div className="flex items-center">

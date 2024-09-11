@@ -7,8 +7,8 @@ export function SectionWhoWeAre() {
     return (
         <section className="mx-auto container flex flex-col gap-10 px-3 md:px-0 text-gray-950 pb-10 items-center">
             <div className="flex flex-col gap-3 items-center w-full justify-center">
-                <h1 className="text-center font-bold text-5xl">Quem Somos?</h1>
-                <span className="text-center font-semibold text-xl text-gray-500 max-w-[750px]">Vestimos os apartamentos com diferenciais que os transformam em verdadeiros hotspots de atração de hóspedes.</span>
+                <h1 className="text-center font-bold text-4xl md:text-5xl">Quem Somos?</h1>
+                <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[750px]">Vestimos os apartamentos com diferenciais que os transformam em verdadeiros hotspots de atração de hóspedes.</span>
             </div>
             {/* Seção desc. */}
             <div className="flex flex-col gap-20 justify-around mt-10 items-center md:flex-row">
@@ -40,7 +40,7 @@ export function SectionWhoWeAre() {
                     <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
                         <h2 className="text-3xl font-bold text-center md:text-start">Experiência</h2>
                         <ul className="list-inside my-2">
-                            <li className="text-center text-xl max-w-[600px] md:text-start">Tour com vantagens em dobro, curadoria de cervejas artesanais, pub crawl em Curitiba.</li>
+                            <li className="text-center text-lg md:text-xl max-w-[600px] md:text-start">Tour com vantagens em dobro, curadoria de cervejas artesanais, pub crawl em Curitiba.</li>
                         </ul>
                         <Link href={``} className="md:pt-5 font-semibold text-blue-500 hover:text-blue-600 transition-all duration-500">Ver mais...</Link>
                     </div>
@@ -48,7 +48,7 @@ export function SectionWhoWeAre() {
                     <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
                         <h2 className="text-3xl font-bold text-center md:text-start">Serviços</h2>
                         <ul className="list-inside my-2">
-                            <li className="text-center text-xl max-w-[600px] md:text-start">Gestão completa do imóvel, atendimento ao usuário, relatórios em tempo real.</li>
+                            <li className="text-center text-lg md:text-xl max-w-[600px] md:text-start">Gestão completa do imóvel, atendimento ao usuário, relatórios em tempo real.</li>
                         </ul>
                         <Link href={``} className="md:pt-5 font-semibold text-blue-500 hover:text-blue-600 transition-all duration-500">Ver mais...</Link>
                     </div>
@@ -56,7 +56,7 @@ export function SectionWhoWeAre() {
                     <div className="flex flex-col justify-center items-center md:justify-start md:items-start w-full">
                         <h2 className="text-3xl font-bold text-center md:text-start">Design</h2>
                         <ul className="list-inside my-2">
-                            <li className="text-center text-xl max-w-[600px] md:text-start">Itens icônicos que traduzem nosso lifestyle.</li>
+                            <li className="text-center text-lg md:text-xl max-w-[600px] md:text-start">Itens icônicos que traduzem nosso lifestyle.</li>
                         </ul>
                         <Link href={``} className="md:pt-5 font-semibold text-blue-500 hover:text-blue-600 transition-all duration-500">Ver mais...</Link>
                     </div>
