@@ -14,7 +14,7 @@ export function CardServices({ title, text, highlighted = false, isLeft = true }
     const hasAnimated = useRef(false);
 
     const containerClass = highlighted
-        ? "bg-blue-500 text-gray-50"
+        ? "bg-gray-500 text-gray-50"
         : "bg-gray-100 text-gray-950";
 
     const textClass = highlighted

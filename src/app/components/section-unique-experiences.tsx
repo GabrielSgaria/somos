@@ -72,7 +72,7 @@ export function SectionUniqueExperiences() {
                 <div className="flex flex-col gap-3 items-center w-full justify-center">
                     <h1 className="text-center font-bold text-4xl md:text-5xl">Vivencie o Melhor de Curitiba</h1>
                     <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[750px]">
-                        Descubra a cidade com tours exclusivos, curadoria de cervejas e eventos locais.
+                        Nossos hóspedes podem acessar experiências exclusivas em nossos apartamentos.
                     </span>
                 </div>
 
@@ -104,10 +104,10 @@ export function SectionUniqueExperiences() {
                         exit={{ opacity: 0, x: -200, scale: 0.7 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="flex flex-col gap-10 justify-center items-center md:max-w-[50%]"
+                        className="flex flex-col gap-10 justify-center items-center md:max-w-[40%]"
                     >
-                        <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
-                            <h1 className="mb-2 text-blue-600 font-bold tracking-wider text-base flex gap-2 justify-center items-center">
+                        <div className="flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
+                            <h1 className="mb-2 text-gray-600 font-bold tracking-wider text-base flex gap-2 justify-center items-center">
                                 Design Icônico e Inspirador <ArrowRight size={20} className="hidden md:flex" />
                             </h1>
                             <h2 className="text-2xl md:text-3xl font-bold text-center md:text-start">
@@ -116,8 +116,11 @@ export function SectionUniqueExperiences() {
                             <p className="text-center text-lg md:text-xl max-w-[600px] md:text-start my-2">
                                 Ítens icônicos que traduzem o conceito e o estilo de vida que nossos hóspedes se sentem pertencentes, reforçando ainda mais esse vínculo.
                             </p>
-                            <button onClick={() => sendMensage()} className="w-52 font-bold px-8 py-2 mt-10 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-                                Saiba Mais
+                            <button
+                                onClick={() => sendMensage()}
+                                className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-gray-800 to-gray-900 text-white focus:ring-2 focus:ring-gray-700 hover:shadow-xl transition duration-200"
+                            >
+                                Seja um parceiro somos
                             </button>
                         </div>
                     </motion.div>
@@ -128,15 +131,15 @@ export function SectionUniqueExperiences() {
                         exit={{ opacity: 0, x: -200, scale: 0.7 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="w-full h-[300px] md:w-[660px] md:h-[530px] relative rounded-xl shadow-md"
+                        className="w-full h-[300px] md:w-[760px] md:h-[630px] relative rounded-xl shadow-md"
                     >
                         <Image
-                            alt=""
+                            alt="Grid Images Icones somos"
                             src="/image/grade.png"
                             fill
                             quality={100}
                             priority
-                            sizes="(min-width: 808px) 50vw, 100vw"
+                            sizes="(min-width: 1208px) 50vw, 100vw"
                             className="object-cover rounded-xl z-20"
                         />
                         <div className="w-[300px] h-[350px] bg-gray-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl" />

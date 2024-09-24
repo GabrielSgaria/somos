@@ -1,7 +1,7 @@
 'use client'
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { motion } from "framer-motion";
 import { sendMensage } from "@/lib/utils";
 
 export function SectionWhoWeAre() {
@@ -13,8 +13,8 @@ export function SectionWhoWeAre() {
                     Vestimos os apartamentos com diferenciais que os transformam em verdadeiros hotspots de atração de hóspedes.
                 </span>
             </div>
-            
-            <div className="flex flex-col gap-20 justify-around mt-10 items-center md:flex-row">
+
+            {/* <div className="flex flex-col gap-20 justify-around mt-10 items-center md:flex-row">
                 <motion.div
                     initial={{ opacity: 0, x: -200, scale: 0.7 }}
                     whileInView={{ opacity: 1, x: 0, scale: 1 }}
@@ -74,9 +74,12 @@ export function SectionWhoWeAre() {
                         <Link href={``} className="md:pt-5 font-semibold text-blue-500 hover:text-blue-600 transition-all duration-500">Ver mais...</Link>
                     </div>
                 </motion.div>
-            </div>
-            <button onClick={() => sendMensage()} className="w-52 font-bold px-8 py-2 mt-10 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-                Saiba Mais
+            </div> */}
+            <button
+                onClick={() => sendMensage()}
+                className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-gray-800 to-gray-900 text-white focus:ring-2 focus:ring-gray-700 hover:shadow-xl transition duration-200"
+            >
+                Seja um parceiro somos
             </button>
         </section>
     )

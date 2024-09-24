@@ -1,10 +1,10 @@
 'use client'
-import { sendMensage } from "@/lib/utils";
+// import { sendMensage } from "@/lib/utils";
 import { Hero } from "./components/hero";
 import { SectionServices } from "./components/section-services";
 import { SectionUniqueExperiences } from "./components/section-unique-experiences";
 import { SectionWhoWeAre } from "./components/section-who-we-are";
-import {motion} from "framer-motion"
+// import {motion} from "framer-motion"
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <SectionWhoWeAre />
       <SectionUniqueExperiences />
       <SectionServices />
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -32,10 +32,10 @@ export default function Home() {
                 Entrar em contato
               </p>
               {/* <WhatsappLogo className="size-5 font-bold" /> */}
-            </a>
+            {/* </a>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */} 
     </main>
   );
 }

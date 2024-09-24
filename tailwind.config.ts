@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'mobile': "url(/image/somos.jpg)",
-        'desktop': "url(/image/somos.jpg)",
+        'mobile': "url(/image/banner/1.webp)",
+        'desktop': "url(/image/banner/1.webp)",
       },
 
       colors: {
