@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: '',
+        url: 'https://sa-east-1.graphassets.com/clyz1o74z04sr07kke1he7vlp/cm1iajjxj0hsv07kidotd7j0q',
         width: 1250,
         height: 1250,
       }

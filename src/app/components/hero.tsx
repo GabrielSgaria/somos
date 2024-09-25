@@ -1,6 +1,6 @@
 'use client'
 
-import { sendMensage } from "@/lib/utils";
+// import { sendMensage } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 export function Hero() {
@@ -27,12 +27,12 @@ export function Hero() {
                 viewport={{ once: true }}
                 className="absolute bottom-14 sm:bottom-24 md:bottom-[15%] w-full flex justify-center"
             >
-                <button
+                {/* <button
                     onClick={() => sendMensage()}
                     className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 text-white focus:ring-2 focus:ring-neutral-700 hover:shadow-xl transition duration-200"
                 >
                     Seja um parceiro somos
-                </button>
+                </button> */}
             </motion.div>
             <div className="absolute bottom-0 left-0 w-screen h-16 bg-gradient-to-t from-neutral-50 to-transparent" />
         </section>
