@@ -1,7 +1,7 @@
 'use client'
 
 import { sendMensage } from "@/lib/utils"
-import { Facebook, Instagram, Mail, Phone } from "lucide-react"
+import { Instagram, Mail, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -15,13 +15,13 @@ export default function Footer() {
                         </h3>
                         <div className="flex items-center">
                             <Mail className="w-5 h-5 mr-2" />
-                            <a href="mailto:atendimento@somos.host" target="_blank" className="hover:text-gray-800 text-center text-lg ">
+                            <a href="mailto:atendimento@somos.host" target="_blank" className="hover:text-gray-300 transition-colors text-center text-lg ">
                                 atendimento@somos.host
                             </a>
                         </div>
                         <div className="flex items-center">
                             <Phone className="w-5 h-5 mr-2" />
-                            <a onClick={() => sendMensage()} target="_blank" className="cursor-pointer hover:text-gray-800 text-center md:text-start w-full text-lg">
+                            <a onClick={() => sendMensage()} target="_blank" className="cursor-pointer hover:text-gray-300 transition-colors text-center md:text-start w-full text-lg">
                                 (41) 98807-8097
                             </a>
                         </div>
@@ -44,13 +44,13 @@ export default function Footer() {
                     <div>
                         <h3 className="text-3xl font-semibold mb-8">Siga-nos</h3>
                         <div className="flex space-x-4">
-                            <Link href="https://facebook.com" target="_blank" className="hover:text-gray-800">
+                            {/* <Link href="https://facebook.com" target="_blank" className="hover:text-gray-800">
                                 <Facebook className="w-6 h-6" />
                                 <span className="sr-only">Facebook</span>
-                            </Link>
-                            <Link href="https://www.instagram.com/somos.host/" className="hover:text-gray-800">
+                            </Link> */}
+                            <Link href="https://www.instagram.com/somos.host/" className="hover:text-gray-300 flex gap-2 transition-colors">
                                 <Instagram className="w-6 h-6" />
-                                <span className="sr-only">Instagram</span>
+                                <span className="">@somos.host</span>
                             </Link>
 
                         </div>

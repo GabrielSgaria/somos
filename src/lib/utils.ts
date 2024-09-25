@@ -10,7 +10,7 @@ export function cn(...inputs: ClassValue[]) {
 export function sendMensage() {
     const linkWhatsApp =
       "https://wa.me/" +
-      5504188078097 +
+      55041988078097 +
       "?text=" +
       encodeURIComponent("Olá, vim através do site da SOMOS!");
 
