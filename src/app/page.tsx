@@ -1,7 +1,8 @@
 'use client'
 // import { sendMensage } from "@/lib/utils";
 import { Hero } from "./components/hero";
-import { SectionServices } from "./components/section-services";
+// import { SectionServices } from "./components/section-services";
+import PropertyServices from "./components/section-services2";
 import { SectionUniqueExperiences } from "./components/section-unique-experiences";
 import { SectionWhoWeAre } from "./components/section-who-we-are";
 // import {motion} from "framer-motion"
@@ -13,7 +14,8 @@ export default function Home() {
       <Hero />
       <SectionWhoWeAre />
       <SectionUniqueExperiences />
-      <SectionServices />
+      {/* <SectionServices /> */}
+      <PropertyServices />
       {/* <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}

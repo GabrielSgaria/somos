@@ -21,6 +21,7 @@ const config = {
       backgroundImage: {
         'mobile': "url(/image/banner/1.webp)",
         'desktop': "url(/image/banner/1.webp)",
+        'banner-city': "url(/image/banner/city2.jpg)"
       },
 
       colors: {
