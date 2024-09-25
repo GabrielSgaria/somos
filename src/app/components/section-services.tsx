@@ -89,7 +89,7 @@ export function SectionServices() {
                 </motion.div> */}
                 <div className="flex flex-col gap-3 items-center w-full justify-center">
                     <h1 className="text-center font-bold text-4xl md:text-5xl">Conheça nossos serviços</h1>
-                    <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[700px]">Oferecemos um serviço completo de hospedagem, do check-in ao atendimento personalizado.</span>
+                    <span className="text-center font-semibold text-lg md:text-xl text-neutral-500 max-w-[700px]">Oferecemos um serviço completo de hospedagem, do check-in ao atendimento personalizado.</span>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-3 md:px-44 mb-20 ">

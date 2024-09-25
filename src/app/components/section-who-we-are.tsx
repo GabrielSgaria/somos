@@ -6,10 +6,10 @@ import { sendMensage } from "@/lib/utils";
 
 export function SectionWhoWeAre() {
     return (
-        <section className="mx-auto container flex flex-col gap-10 px-3 md:px-0 text-gray-950 pb-10 items-center">
+        <section className="mx-auto container flex flex-col gap-10 px-3 md:px-0 text-neutral-950 pb-10 items-center">
             <div className="flex flex-col gap-3 items-center w-full justify-center">
                 <h1 className="text-center font-bold text-4xl md:text-5xl">Quem Somos?</h1>
-                <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[750px]">
+                <span className="text-center font-semibold text-lg md:text-xl text-neutral-500 max-w-[750px]">
                     Vestimos os apartamentos com diferenciais que os transformam em verdadeiros hotspots de atração de hóspedes.
                 </span>
             </div>
@@ -32,8 +32,8 @@ export function SectionWhoWeAre() {
                         sizes="(min-width: 808px) 50vw, 100vw"
                         className="object-cover z-20 rounded-xl"
                     />
-                    <div className="w-[300px] h-[350px] bg-gray-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl"/>
-                    <div className="w-[450px] h-[350px] bg-gray-300/10 backdrop-blur-lg hidden md:absolute z-10 right-24 -bottom-8 rounded-xl shadow-sm"/>
+                    <div className="w-[300px] h-[350px] bg-neutral-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl"/>
+                    <div className="w-[450px] h-[350px] bg-neutral-300/10 backdrop-blur-lg hidden md:absolute z-10 right-24 -bottom-8 rounded-xl shadow-sm"/>
                 </motion.div>
 
                 <motion.div
@@ -77,7 +77,7 @@ export function SectionWhoWeAre() {
             </div> */}
             <button
                 onClick={() => sendMensage()}
-                className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-gray-800 to-gray-900 text-white focus:ring-2 focus:ring-gray-700 hover:shadow-xl transition duration-200"
+                className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 text-white focus:ring-2 focus:ring-neutral-700 hover:shadow-xl transition duration-200"
             >
                 Seja um parceiro somos
             </button>

@@ -14,7 +14,7 @@ export function Hero() {
                 viewport={{ once: true }}
                 className="absolute top-0 2xl:top-10 w-full"
             >
-                <h1 className="cormorant text-[50px] sm:text-[80px] md:text-[100px] 2xl:text-[100px] font-normal text-gray-950/80 text-center">
+                <h1 className="cormorant text-[50px] sm:text-[80px] md:text-[100px] 2xl:text-[100px] font-normal text-neutral-950/80 text-center">
                     SOMOS
                 </h1>
             </motion.div>
@@ -29,12 +29,12 @@ export function Hero() {
             >
                 <button
                     onClick={() => sendMensage()}
-                    className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-gray-800 to-gray-900 text-white focus:ring-2 focus:ring-gray-700 hover:shadow-xl transition duration-200"
+                    className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 text-white focus:ring-2 focus:ring-neutral-700 hover:shadow-xl transition duration-200"
                 >
                     Seja um parceiro somos
                 </button>
             </motion.div>
-            <div className="absolute bottom-0 left-0 w-screen h-16 bg-gradient-to-t from-gray-50 to-transparent" />
+            <div className="absolute bottom-0 left-0 w-screen h-16 bg-gradient-to-t from-neutral-50 to-transparent" />
         </section>
     );
 }

@@ -41,12 +41,12 @@ import {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/80 -z-10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Nossos Serviços</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-neutral-950">Nossos Serviços</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
             {services.map((service, index) => (
               <div key={index} className="flex flex-col items-center p-4">
                 <div className="p-3 rounded-full mb-4">
-                  <service.icon className="w-12 h-12 text-primary" />
+                  <service.icon className="w-12 h-12 text-neutral-950" />
                 </div>
                 <p className="text-xs sm:text-base text-center text-card-foreground">{service.text}</p>
               </div>

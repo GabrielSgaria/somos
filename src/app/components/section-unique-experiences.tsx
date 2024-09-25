@@ -67,11 +67,11 @@ const items = [
 
 export function SectionUniqueExperiences() {
     return (
-        <section className="py-28 text-gray-950 items-center h-full bg-gray-100">
+        <section className="py-28 text-neutral-950 items-center h-full bg-neutral-100">
             <div className="mx-auto container flex flex-col gap-10 px-3 md:px-0">
                 <div className="flex flex-col gap-3 items-center w-full justify-center">
                     <h1 className="text-center font-bold text-4xl md:text-5xl">Vivencie o Melhor de Curitiba</h1>
-                    <span className="text-center font-semibold text-lg md:text-xl text-gray-500 max-w-[750px]">
+                    <span className="text-center font-semibold text-lg md:text-xl text-neutral-500 max-w-[750px]">
                         Nossos hóspedes podem acessar experiências exclusivas em nossos apartamentos.
                     </span>
                 </div>
@@ -107,7 +107,7 @@ export function SectionUniqueExperiences() {
                         className="flex flex-col gap-10 justify-center items-center md:max-w-[40%]"
                     >
                         <div className="flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
-                            <h1 className="mb-2 text-gray-600 font-bold tracking-wider text-base flex gap-2 justify-center items-center">
+                            <h1 className="mb-2 text-neutral-600 font-bold tracking-wider text-base flex gap-2 justify-center items-center">
                                 Design Icônico e Inspirador <ArrowRight size={20} className="hidden md:flex" />
                             </h1>
                             <h2 className="text-2xl md:text-3xl font-bold text-center md:text-start">
@@ -118,7 +118,7 @@ export function SectionUniqueExperiences() {
                             </p>
                             <button
                                 onClick={() => sendMensage()}
-                                className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-gray-800 to-gray-900 text-white focus:ring-2 focus:ring-gray-700 hover:shadow-xl transition duration-200"
+                                className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 text-white focus:ring-2 focus:ring-neutral-700 hover:shadow-xl transition duration-200"
                             >
                                 Seja um parceiro somos
                             </button>
@@ -142,8 +142,8 @@ export function SectionUniqueExperiences() {
                             sizes="(min-width: 1208px) 50vw, 100vw"
                             className="object-cover rounded-xl z-20"
                         />
-                        <div className="w-[300px] h-[350px] bg-gray-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl" />
-                        <div className="w-[450px] h-[350px] bg-gray-300/10 backdrop-blur-lg hidden md:absolute z-10 left-24 -bottom-8 rounded-xl shadow-xl" />
+                        <div className="w-[300px] h-[350px] bg-neutral-300/20 backdrop-blur-lg hidden md:absolute z-10 -left-8 top-24 rounded-xl shadow-xl" />
+                        <div className="w-[450px] h-[350px] bg-neutral-300/10 backdrop-blur-lg hidden md:absolute z-10 left-24 -bottom-8 rounded-xl shadow-xl" />
                     </motion.div>
                 </div>
             </div>

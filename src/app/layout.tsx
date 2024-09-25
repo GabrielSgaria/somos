@@ -70,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.variable} bg-gray-50 text-gray-950 antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.variable} bg-neutral-50 text-gray-950 antialiased`}
       >
         {children}
         <Footer />
