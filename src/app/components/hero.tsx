@@ -2,6 +2,7 @@
 
 // import { sendMensage } from "@/lib/utils";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Hero() {
     return (
@@ -12,27 +13,17 @@ export function Hero() {
                 exit={{ opacity: 0, x: -200, scale: 0.7 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="absolute top-0 2xl:top-10 w-full"
+                className="absolute top-4 2xl:top-20 w-full"
             >
-                <h1 className="cormorant text-[50px] sm:text-[80px] md:text-[100px] 2xl:text-[100px] font-normal text-neutral-950/80 text-center">
-                    SOMOS
-                </h1>
-            </motion.div>
-
-            <motion.div
-                initial={{ opacity: 0, x: -200, scale: 0.7 }}
-                whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                exit={{ opacity: 0, x: -200, scale: 0.7 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="absolute bottom-14 sm:bottom-24 md:bottom-[15%] w-full flex justify-center"
-            >
-                {/* <button
-                    onClick={() => sendMensage()}
-                    className="font-bold px-10 py-2 rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 text-white focus:ring-2 focus:ring-neutral-700 hover:shadow-xl transition duration-200"
-                >
-                    Seja um parceiro somos
-                </button> */}
+                <Image
+                    width={300}
+                    height={300}
+                    quality={100}
+                    priority
+                    alt="Logo Somos"
+                    src="/image/logo/logo-sem-fundo.png"
+                    className="w-44 sm:w-60 md:w-96 mx-auto"
+                />
             </motion.div>
             <div className="absolute bottom-0 left-0 w-screen h-16 bg-gradient-to-t from-neutral-50 to-transparent" />
         </section>
