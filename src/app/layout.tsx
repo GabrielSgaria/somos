@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Cormorant_Garamond } from "next/font/google"
 import "./globals.css";
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
 
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
@@ -73,7 +73,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.variable} bg-neutral-50 text-gray-950 antialiased`}
       >
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
